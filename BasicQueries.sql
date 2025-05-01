@@ -97,3 +97,26 @@ WHERE release_year IN (2015, 2017, 2020);
 SELECT *
 FROM moviesdb.movies
 WHERE industry IN ('Bollywood', 'Tollywood', 'Hollywood');
+
+
+/*
+🔹 ORDER BY (Ascending and Descending)
+*/
+
+-- 1. List all movies sorted by IMDb rating in ascending order.
+SELECT *
+FROM moviesdb.movies
+ORDER BY imdb_rating;
+
+-- 2. Display movies released after 2010, ordered by release year ascending.
+SELECT *
+FROM moviesdb.movies
+WHERE release_year > 2010
+ORDER BY release_year;
+
+-- 3. Show movies from 'Bollywood' ordered by title alphabetically.
+SELECT *
+FROM moviesdb.movies
+WHERE industry = 'Bollywood'
+ORDER BY title;
+
