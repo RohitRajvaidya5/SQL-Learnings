@@ -32,3 +32,4 @@ DROP Email;
 -- Alter Table --> Rename Column
 ALTER TABLE Persons
 RENAME COLUMN Email to Email_id;
+
