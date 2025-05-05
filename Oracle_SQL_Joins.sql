@@ -27,11 +27,11 @@ FROM all_tab_columns
 WHERE table_name = 'ANIME';  -- Optional: If table is not in your current schema
 
 -- Find Anime with Same Genre but Different Names
-SELECT A.NAME as Aname, B.NAME as Bname, A.GENRE
-FROM ANIME A
-JOIN ANIME B
-ON A.GENRE = B.GENRE
-WHERE A.ANIME_ID <> B.ANIME_ID;
+-- SELECT A.NAME as Aname, B.NAME as Bname, A.GENRE
+-- FROM ANIME A
+-- JOIN ANIME B
+-- ON A.GENRE = B.GENRE
+-- WHERE A.ANIME_ID <> B.ANIME_ID;
 
 SELECT A.NAME AS Aname, B.NAME AS Bname, DBMS_LOB.SUBSTR(A.GENRE, 100) AS genre
 FROM ANIME A

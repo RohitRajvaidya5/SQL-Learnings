@@ -52,5 +52,3 @@ FETCH FIRST 3 ROWS ONLY;
 SELECT *
 FROM employees
 WHERE email LIKE '%jane%';
-
-
